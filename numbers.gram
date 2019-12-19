@@ -1,0 +1,13 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for numbers
+ */
+
+grammar numbers;
+
+public <move> = <digit> | <digit> <digit> <digit> | <digit> <digit> <digit> <digit> <digit> ;
+public <move2> = <digit> + ;
+
+
+<digit> = oh | zero | one | two | three | four | five | six | seven | eight | nine ;
