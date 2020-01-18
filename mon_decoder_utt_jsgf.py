@@ -12,7 +12,7 @@ def wer(hypothesis, reference):
     supressionCost = 1
     m = len(hypothesis)
     n = len(reference)
-    d = [x[:] for x in [[0] * 10] * 10]
+    d = [x[:] for x in [[0] * n] * m]
     for i in range(0, m):
         for j in range(0, n):
             d[i][j] = 0
